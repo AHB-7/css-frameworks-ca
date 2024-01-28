@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../dist/css/index.css" />
+        <script
+            src="https://kit.fontawesome.com/c4f6dc2483.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body class="m-0 p-0 bg-dark" data-bs-theme="dark">
+        <header>
+            <nav class="navbar navbar-expand-md bg-body-tertiary">
+                <div class="container">
+                    <a
+                        class="navbar-brand me-auto d-md-none"
+                        href="../index.html"
+                    >
+                        <img
+                            src="../assets/logo.svg"
+                            alt="logo Image"
+                            style="height: 2rem"
+                        />
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll"
+                        aria-controls="navbarScroll"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- collapse -->
+                    <div
+                        class="collapse navbar-collapse d-md-flex align-items-center justify-content-center flex-md-row flex-column"
+                        id="navbarScroll"
+                    >
+                        <form
+                            class="d-flex position-relative my-3"
+                            role="search"
+                        >
+                            <input
+                                class="form-control me-2"
+                                type="search"
+                                placeholder="Search"
+                                aria-label="Search"
+                            />
+
+                            <i
+                                class="fa-solid fa-magnifying-glass position-absolute end-0 top-0 d-flex justify-content-center align-items-center me-3 link-brand"
+                                style="width: 1.5rem; height: 2.4rem"
+                            ></i>
+                        </form>
+                        <a
+                            class="navbar-brand mx-auto d-none d-md-inline-block"
+                            href="../index.html"
+                        >
+                            <img
+                                src="../assets/logo.svg"
+                                alt="logo Image"
+                                style="height: 2rem"
+                            />
+                        </a>
+                        <ul
+                            class="navbar-nav d-flex align-items-start justify-content-center gap-1 ps-3 py-2"
+                        >
+                            <li class="nav-item position-relative z-3">
+                                <a href="./feed.html" class="p-0 m-0 link-brand"
+                                    ><i
+                                        class="fa-solid fa-home rounded-circle nav-icons link-icon auto py-1 pt-1 text-light"
+                                    ></i>
+                                    <p
+                                        class="d-md-none position-absolute start-100 top-0 ps-0 pt-2 fw-bold"
+                                    >
+                                        Home
+                                    </p>
+                                </a>
+                                <span
+                                    class="position-absolute bottom-0 p-1 start-50 badge rounded-pill text-warning"
+                                    >New
+                                    <span class="visually-hidden"
+                                        >New Posts</span
+                                    >
+                                </span>
+                            </li>
+                            <li class="nav-item position-relative">
+                                <a
+                                    href="./profile.html"
+                                    class="p-0 m-0 link-brand"
+                                    ><i
+                                        class="fa-solid fa-user rounded-circle nav-icons link-icon auto py-1 pt-1 text-light"
+                                    ></i>
+                                    <p
+                                        class="d-md-none position-absolute start-100 top-0 ps-0 pt-2 fw-bold"
+                                    >
+                                        Profile
+                                    </p></a
+                                >
+                            </li>
+                            <li class="nav-item z-1 position-relative">
+                                <a
+                                    href="./profile.html"
+                                    class="p-0 m-0 link-brand"
+                                    ><i
+                                        class="fa-solid fa-envelope-open rounded-circle nav-icons link-icon auto py-1 pt-1 text-light"
+                                    ></i>
+                                    <p
+                                        class="d-md-none position-absolute start-100 top-0 ps-0 pt-2 fw-bold"
+                                    >
+                                        Messeages
+                                    </p>
+                                </a>
+                                <span
+                                    class="position-absolute end-0 top-50 z-n1 p-2 badge rounded-pill text-black bg-warning"
+                                >
+                                    <span class="visually-hidden"></span>
+                                </span>
+                            </li>
+                            <li class="nav-item dropdown z-3">
+                                <a
+                                    class="nav-link fa-solid fa-gear rounded-circle nav-icons link-icon auto py-1 pt-1 text-light"
+                                    href="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Privacy</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Search Engine</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Setting</a
+                                        >
+                                    </li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item text-danger"
+                                            href="../index.html"
+                                            >Log Out</a
+                                        >
+                                    </li>
+                                </ul>
+                                <span
+                                    class="position-absolute end-0 top-50 z-n1 p-2 badge rounded-pill text-black bg-success"
+                                >
+                                    <span class="visually-hidden"></span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="container pt-3 pt-sm-2">
+            <section class="row text-white">
+                <section class="col-md-6 col-12 col-lg-4">
+                    <div class="container w-100 p-0 bg-glassy py-2 px-1 mb-3">
+                        <div class="position-relative">
+                            <div
+                                class="dropdown-toggle d-flex position-absolute top-0 end-0 p-1 rounded-1"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                                role="button"
+                            ></div>
+                            <ul
+                                class="dropdown-menu dropdown-menu-dark dropdown-menu-end"
+                            >
+                                <li>
+                                    <a class="dropdown-item" href="#"></a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Edite</a>
+                                </li>
+                            </ul>
+                            <div
+                                class="d-flex alingn-items-center justify-content-center flex-column m-2"
+                            >
+                                <div
+                                    class="d-flex alingn-items-center justify-content-center flex-column"
+                                >
+                                    <img
+                                        src="../assets/profileImg.jpg"
+                                        alt="profile image"
+                                        class="rounded-circle m-auto"
+                                        height="130"
+                                        width="130"
+                                    />
+                                    <h1 class="text-center">Username</h1>
+                                </div>
+                                <div>
+                                    <div
+                                        class="row row-cols-3 mt-4 w-100 col-7"
+                                    >
+                                        <div
+                                            class="align-items-center justify-content-center d-flex flex-column"
+                                        >
+                                            <div class="position-relative z-3">
+                                                <i
+                                                    class="fa-solid fa-paper-plane fs-4"
+                                                ></i>
+                                                <span
+                                                    class="position-absolute bottom-50 p-1 z-n1 end-50 badge rounde-3 text-black bg-brand"
+                                                >
+                                                    35
+                                                    <span
+                                                        class="visually-hidden"
+                                                        >Posts</span
+                                                    >
+                                                </span>
+                                            </div>
+                                            <p class="m-0 pt-1">Posts</p>
+                                        </div>
+                                        <div
+                                            class="align-items-center justify-content-center d-flex flex-column"
+                                        >
+                                            <div class="position-relative z-3">
+                                                <i
+                                                    class="fa-solid fa-user-group fs-4"
+                                                ></i>
+                                                <span
+                                                    class="position-absolute bottom-50 z-n1 end-50 badge p-1 rounde-3 text-black bg-brand"
+                                                >
+                                                    99
+                                                    <span
+                                                        class="visually-hidden"
+                                                        >Following</span
+                                                    >
+                                                </span>
+                                            </div>
+                                            <p class="m-0 pt-1">following</p>
+                                        </div>
+                                        <div
+                                            class="align-items-center justify-content-center d-flex flex-column z-3"
+                                        >
+                                            <div class="position-relative">
+                                                <i
+                                                    class="fa-solid fa-user-group fs-4"
+                                                ></i>
+                                                <span
+                                                    class="position-absolute bottom-50 z-n1 end-50 p-1 badge rounde-3 text-black bg-brand"
+                                                >
+                                                    215
+                                                    <span
+                                                        class="visually-hidden"
+                                                        >Followers</span
+                                                    >
+                                                </span>
+                                            </div>
+                                            <p class="m-0 pt-1">Followers</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion bg-glassy">
+                        <div class="accordion-item bg-glassy">
+                            <h2 class="accordion-header">
+                                <button
+                                    class="accordion-button"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#accordionBio"
+                                    aria-expanded="true"
+                                    aria-controls="accordionBio"
+                                >
+                                    About Me:
+                                </button>
+                            </h2>
+                            <div
+                                id="accordionBio"
+                                class="accordion-collapse collapse show"
+                            >
+                                <div class="accordion-body">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <strong>Name : </strong>
+                                            TheBLaBLaMAn
+                                        </li>
+                                        <li>
+                                            <strong>Birth Day : </strong
+                                            >00/00/1000
+                                        </li>
+                                        <li><strong>From : </strong>Mars</li>
+                                        <li>
+                                            <strong>Peronal Link : </strong>
+                                            <a href="">www.mars.xcx</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-glassy">
+                            <h2 class="accordion-header">
+                                <button
+                                    class="accordion-button"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#game-collapse"
+                                    aria-expanded="true"
+                                    aria-controls="game-collapse"
+                                >
+                                    Games Currently Playing
+                                </button>
+                            </h2>
+                            <div
+                                id="game-collapse"
+                                class="accordion-collapse collapse show"
+                            >
+                                <div class="accordion-body">
+                                    <div
+                                        class="d-flex align-items-center justify-content-start flex-row flex-wrap gap-1"
+                                    >
+                                        <div>
+                                            <img
+                                                src="../assets/games/fortnite.svg"
+                                                alt="fortnite"
+                                                class="w-game"
+                                            />
+                                        </div>
+                                        <div>
+                                            <img
+                                                src="../assets/games/valorent.svg"
+                                                alt="valorent"
+                                                class="w-game"
+                                            />
+                                        </div>
+                                        <div>
+                                            <img
+                                                src="../assets/games/gta.svg"
+                                                alt="gta"
+                                                class="w-game"
+                                            />
+                                        </div>
+                                        <div>
+                                            <img
+                                                src="../assets/games/lol.svg"
+                                                alt="lol"
+                                                class="w-game"
+                                            />
+                                        </div>
+                                        <div>
+                                            <img
+                                                src="../assets/games/csgo.svg"
+                                                alt="csgo"
+                                                class="w-game"
+                                            />
+                                        </div>
+                                        <div>
+                                            <img
+                                                src="../assets/games/sims.svg"
+                                                alt="sims"
+                                                class="w-game"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-glassy">
+                            <h2 class="accordion-header">
+                                <button
+                                    class="accordion-button"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#information-accordion"
+                                    aria-expanded="true"
+                                    aria-controls="information-accordion"
+                                >
+                                    Bio
+                                </button>
+                            </h2>
+                            <div
+                                id="information-accordion"
+                                class="accordion-collapse collapse show"
+                            >
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Quis quas ad et natus
+                                    voluptate aut perferendis beatae quae,
+                                    delectus quod harum iusto ratione tempora
+                                    non suscipit consequatur in dolore labore?
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-lg-8 col-md-6 col-12">
+                    <form
+                        class="form-floating pt-3 pt-md-0 needs-validation"
+                        novalidate
+                    >
+                        <textarea
+                            class="form-control bg-dark bg-avtive-glassy text-white pt-5"
+                            placeholder="Write Something..."
+                            style="height: 200px"
+                            maxlength="400"
+                            minlength="1"
+                            id="validationTooltip"
+                            required
+                        ></textarea>
+                        <label for="validationTooltip"
+                            >Write Something...
+                        </label>
+                        <div class="invalid-tooltip top-0 mt-2 end-0">
+                            Please write something!!
+                        </div>
+                        <div
+                            class="btn-group position-absolute bottom-0 w-100 bg-glassy"
+                            role="group"
+                            aria-label="Basic mixed styles "
+                        >
+                            <button
+                                type="button"
+                                class="btn btn-blenden d-flex align-items-center justify-content-center gap-2"
+                            >
+                                <i class="fa-solid fa-video"></i>
+                                <span class="m-0 d-none d-lg-inline"
+                                    >Stream</span
+                                >
+                            </button>
+                            <button
+                                type="button"
+                                class="btn btn-blenden d-flex align-items-center justify-content-center gap-2"
+                            >
+                                <i class="fa-solid fa-image"></i>
+                                <span class="m-0 d-none d-lg-inline"
+                                    >Image</span
+                                >
+                            </button>
+
+                            <button
+                                id="controlBtn"
+                                class="btn btn-blenden d-flex align-items-center justify-content-center gap-2"
+                            >
+                                <i class="fa-solid fa-paper-plane"></i>
+                                <span class="m-0 d-none d-lg-inline"
+                                    >Publish</span
+                                >
+                            </button>
+                        </div>
+                    </form>
+                    <div
+                        class="pt-3 px-1 d-flex justify-content-between align-items-center bg-glassy mt-3"
+                    >
+                        <h2 class="text-white">Your Latest Posts :</h2>
+                        <span
+                            role="button"
+                            class="link-brand"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapsePostes"
+                            aria-expanded="false"
+                            aria-controls="collapsePostes"
+                        >
+                            Hide
+                        </span>
+                    </div>
+                    <div
+                        class="row row-cols-1 g-4 collapse show"
+                        id="collapsePostes"
+                    >
+                        <div class="col">
+                            <div class="card h-100">
+                                <img
+                                    src="https://cdn.vox-cdn.com/thumbor/iaRO8ZRmYP7vNgG5yPiBME1G1Wg=/0x0:3011x1447/1200x675/filters:focal(1123x329:1603x809)/cdn.vox-cdn.com/uploads/chorus_image/image/66954486/VALORANT_Jett_Red_crop.0.jpg"
+                                    class="card-img-top"
+                                    alt="post test"
+                                />
+                                <div class="card-body position-relative">
+                                    <h5 class="card-title">Game Name</h5>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Tenetur, velit unde,
+                                        animi voluptate excepturi maiores alias
+                                        ratione ducimus nobis quo facilis
+                                        placeat suscipit sunt dolor porro culpa,
+                                        fugiat quod soluta.
+                                    </p>
+                                    <div
+                                        class="dropdown-toggle d-flex position-absolute top-0 end-0 p-1 rounded-1 my-2 me-3 fs-4 text-dark"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                        role="button"
+                                    >
+                                        <small class="text-body-secondary fs-6">
+                                            1 hour ago</small
+                                        >
+                                    </div>
+                                    <ul
+                                        class="dropdown-menu dropdown-menu-dark dropdown-menu-end"
+                                    >
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >Edite</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                class="dropdown-item text-danger"
+                                                href="#"
+                                            >
+                                                Delet
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer row m-0 p-0">
+                                    <div class="btn-group p-0">
+                                        <button
+                                            type="button"
+                                            class="btn btn-post d-flex align-items-center justify-content-center"
+                                        >
+                                            <i
+                                                class="fa-solid fa-check-double"
+                                            ></i>
+                                            <span class="m-0">
+                                                120
+                                                <span class="d-none d-lg-inline"
+                                                    >Agreed</span
+                                                >
+                                            </span>
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="btn btn-post d-flex align-items-center justify-content-center gap-2"
+                                        >
+                                            <i class="fa-solid fa-comment"></i>
+                                            <span class="m-0">
+                                                12<span
+                                                    class="d-none d-lg-inline"
+                                                    >Comments</span
+                                                >
+                                            </span>
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="btn btn-post d-flex align-items-center justify-content-center gap-2"
+                                        >
+                                            <i
+                                                class="fa-solid fa-share-nodes"
+                                            ></i>
+                                            <span class="m-0">34</span>
+                                            <span class="d-none d-lg-inline"
+                                                >Shared</span
+                                            >
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">
+                                        This card has supporting text below as a
+                                        natural lead-in to additional content.
+                                    </p>
+                                </div>
+                                <div
+                                    class="dropdown-toggle d-flex position-absolute top-0 end-0 p-1 rounded-1 my-2 me-3 fs-4 text-dark"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                    role="button"
+                                >
+                                    <small class="text-body-secondary fs-6">
+                                        24.12.2023</small
+                                    >
+                                </div>
+                                <ul
+                                    class="dropdown-menu dropdown-menu-dark dropdown-menu-end"
+                                >
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Edite</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item text-danger"
+                                            href="#"
+                                        >
+                                            Delet
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="card-footer row m-0 p-0">
+                                    <div class="btn-group p-0">
+                                        <button
+                                            type="button"
+                                            class="btn btn-post d-flex align-items-center justify-content-center"
+                                        >
+                                            <i
+                                                class="fa-solid fa-check-double"
+                                            ></i>
+                                            <span class="m-0">
+                                                120
+                                                <span class="d-none d-lg-inline"
+                                                    >Agreed</span
+                                                >
+                                            </span>
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="btn btn-post d-flex align-items-center justify-content-center gap-2"
+                                        >
+                                            <i class="fa-solid fa-comment"></i>
+                                            <span class="m-0">
+                                                12<span
+                                                    class="d-none d-lg-inline"
+                                                    >Comments</span
+                                                >
+                                            </span>
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="btn btn-post d-flex align-items-center justify-content-center gap-2"
+                                        >
+                                            <i
+                                                class="fa-solid fa-share-nodes"
+                                            ></i>
+                                            <span class="m-0">34</span>
+                                            <span class="d-none d-lg-inline"
+                                                >Shared</span
+                                            >
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img
+                                    src="https://www.cnet.com/a/img/resize/0ef788248caeea67f4c80ade63a6e95f49bf3a2a/hub/2015/12/17/b5fed3aa-a35c-4dc9-ad71-fc17118ebcb1/lol.jpg?auto=webp&width=1920"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                                <div class="card-body position-relative">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">
+                                        This is a wider card with supporting
+                                        text below as a natural lead-in to
+                                        additional content. This card has even
+                                        longer content than the first to show
+                                        that equal height action.
+                                    </p>
+                                    <div
+                                        class="dropdown-toggle d-flex position-absolute top-0 end-0 p-1 rounded-1 my-2 me-3 fs-4 text-dark"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                        role="button"
+                                    >
+                                        <small class="text-body-secondary fs-6">
+                                            22.12.2023</small
+                                        >
+                                    </div>
+                                    <ul
+                                        class="dropdown-menu dropdown-menu-dark dropdown-menu-end"
+                                    >
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >Edite</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                class="dropdown-item text-danger"
+                                                href="#"
+                                            >
+                                                Delet
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer row m-0 p-0">
+                                    <div class="btn-group p-0">
+                                        <button
+                                            type="button"
+                                            class="btn btn-post d-flex align-items-center justify-content-center"
+                                        >
+                                            <i
+                                                class="fa-solid fa-check-double"
+                                            ></i>
+                                            <span class="m-0">
+                                                120
+                                                <span class="d-none d-lg-inline"
+                                                    >Agreed</span
+                                                >
+                                            </span>
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="btn btn-post d-flex align-items-center justify-content-center gap-2"
+                                        >
+                                            <i class="fa-solid fa-comment"></i>
+                                            <span class="m-0">
+                                                12<span
+                                                    class="d-none d-lg-inline"
+                                                    >Comments</span
+                                                >
+                                            </span>
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="btn btn-post d-flex align-items-center justify-content-center gap-2"
+                                        >
+                                            <i
+                                                class="fa-solid fa-share-nodes"
+                                            ></i>
+                                            <span class="m-0">34</span>
+                                            <span class="d-none d-lg-inline"
+                                                >Shared</span
+                                            >
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img
+                                    src="https://www.cnet.com/a/img/resize/0ef788248caeea67f4c80ade63a6e95f49bf3a2a/hub/2015/12/17/b5fed3aa-a35c-4dc9-ad71-fc17118ebcb1/lol.jpg?auto=webp&width=1920"
+                                    class="card-img-top"
+                                    alt="..."
+                                />
+                                <div class="card-body position-relative">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">
+                                        This is a wider card with supporting
+                                        text below as a natural lead-in to
+                                        additional content. This card has even
+                                        longer content than the first to show
+                                        that equal height action.
+                                    </p>
+                                    <div
+                                        class="dropdown-toggle d-flex position-absolute top-0 end-0 p-1 rounded-1 my-2 me-3 fs-4 text-dark"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                        role="button"
+                                    >
+                                        <small class="text-body-secondary fs-6">
+                                            24.12.2023</small
+                                        >
+                                    </div>
+                                    <ul
+                                        class="dropdown-menu dropdown-menu-dark dropdown-menu-end"
+                                    >
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >Edite</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                class="dropdown-item text-danger"
+                                                href="#"
+                                            >
+                                                Delet
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer row m-0 p-0">
+                                    <div class="btn-group p-0">
+                                        <button
+                                            type="button"
+                                            class="btn btn-post d-flex align-items-center justify-content-center"
+                                        >
+                                            <i
+                                                class="fa-solid fa-check-double"
+                                            ></i>
+                                            <span class="m-0">
+                                                120
+                                                <span class="d-none d-lg-inline"
+                                                    >Agreed</span
+                                                >
+                                            </span>
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="btn btn-post d-flex align-items-center justify-content-center gap-2"
+                                        >
+                                            <i class="fa-solid fa-comment"></i>
+                                            <span class="m-0">
+                                                12<span
+                                                    class="d-none d-lg-inline"
+                                                    >Comments</span
+                                                >
+                                            </span>
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="btn btn-post d-flex align-items-center justify-content-center gap-2"
+                                        >
+                                            <i
+                                                class="fa-solid fa-share-nodes"
+                                            ></i>
+                                            <span class="m-0">34</span>
+                                            <span class="d-none d-lg-inline"
+                                                >Shared</span
+                                            >
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
+        <footer></footer>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../js/index.js"></script>
+    </body>
+</html>

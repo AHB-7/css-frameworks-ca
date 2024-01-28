@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../dist/css/index.css" />
+        <script
+            src="https://kit.fontawesome.com/c4f6dc2483.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body class="m-0 p-0 bg-dark" data-bs-theme="dark">
+        <header>
+            <nav class="navbar navbar-expand-md bg-body-tertiary">
+                <div class="container">
+                    <a
+                        class="navbar-brand me-auto d-md-none"
+                        href="../index.html"
+                    >
+                        <img
+                            src="../assets/logo.svg"
+                            alt="logo Image"
+                            style="height: 2rem"
+                        />
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll"
+                        aria-controls="navbarScroll"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- collapse -->
+                    <div
+                        class="collapse navbar-collapse d-md-flex align-items-center justify-content-center flex-md-row flex-column"
+                        id="navbarScroll"
+                    >
+                        <form
+                            class="d-flex position-relative my-3"
+                            role="search"
+                        >
+                            <input
+                                class="form-control me-2"
+                                type="search"
+                                placeholder="Search"
+                                aria-label="Search"
+                            />
+                            <i
+                                class="fa-solid fa-magnifying-glass position-absolute end-0 top-0 d-flex justify-content-center align-items-center me-3 link-brand"
+                                style="width: 1.5rem; height: 2.4rem"
+                            ></i>
+                        </form>
+                        <a
+                            class="navbar-brand mx-auto d-none d-md-inline-block"
+                            href="../index.html"
+                        >
+                            <img
+                                src="../assets/logo.svg"
+                                alt="logo Image"
+                                style="height: 2rem"
+                            />
+                        </a>
+                        <ul
+                            class="navbar-nav d-flex align-items-start justify-content-center gap-1 ps-3 py-2"
+                        >
+                            <li class="nav-item position-relative z-3">
+                                <a href="./feed.html" class="p-0 m-0 link-brand"
+                                    ><i
+                                        class="fa-solid fa-home rounded-circle nav-icons link-icon auto py-1 pt-1 text-light"
+                                    ></i>
+                                    <p
+                                        class="d-md-none position-absolute start-100 top-0 ps-0 pt-2 fw-bold"
+                                    >
+                                        Home
+                                    </p>
+                                </a>
+                                <span
+                                    class="position-absolute bottom-0 p-1 start-50 badge rounded-pill text-warning"
+                                    >New
+                                    <span class="visually-hidden"
+                                        >New Posts</span
+                                    >
+                                </span>
+                            </li>
+                            <li class="nav-item position-relative">
+                                <a
+                                    href="./profile.html"
+                                    class="p-0 m-0 link-brand"
+                                    ><i
+                                        class="fa-solid fa-user rounded-circle nav-icons link-icon auto py-1 pt-1 text-light"
+                                    ></i>
+                                    <p
+                                        class="d-md-none position-absolute start-100 top-0 ps-0 pt-2 fw-bold"
+                                    >
+                                        Profile
+                                    </p></a
+                                >
+                            </li>
+                            <li class="nav-item z-1 position-relative">
+                                <a
+                                    href="./profile.html"
+                                    class="p-0 m-0 link-brand"
+                                    ><i
+                                        class="fa-solid fa-envelope-open rounded-circle nav-icons link-icon auto py-1 pt-1 text-light"
+                                    ></i>
+                                    <p
+                                        class="d-md-none position-absolute start-100 top-0 ps-0 pt-2 fw-bold"
+                                    >
+                                        Messeages
+                                    </p>
+                                </a>
+                                <span
+                                    class="position-absolute end-0 top-50 z-n1 p-2 badge rounded-pill text-black bg-warning"
+                                >
+                                    <span class="visually-hidden"></span>
+                                </span>
+                            </li>
+                            <li class="nav-item dropdown z-3">
+                                <a
+                                    class="nav-link fa-solid fa-gear rounded-circle nav-icons link-icon auto py-1 pt-1 text-light"
+                                    href="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Privacy</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Search Engine</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Setting</a
+                                        >
+                                    </li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item text-danger"
+                                            href="../index.html"
+                                            >Log Out</a
+                                        >
+                                    </li>
+                                </ul>
+                                <span
+                                    class="position-absolute end-0 top-50 z-n1 p-2 badge rounded-pill text-black bg-success"
+                                >
+                                    <span class="visually-hidden"></span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="container pt-3 pt-sm-2">
+            <section class="row text-white">
+                <section
+                    class="col-md-5 col-12 col-lg-4 position-sticky sticky-top top-0"
+                >
+                    <button
+                        class="btn btn-brand d-md-none d-block w-100"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasLeft"
+                        aria-controls="offcanvasLeft"
+                    >
+                        <i class="fa-solid fa-filter"></i> Fillter
+                    </button>
+
+                    <div
+                        class="accordion bg-glassy offcanvas-md offcanvas-start"
+                        tabindex="-1"
+                        id="offcanvasLeft"
+                        aria-labelledby="offcanvasLeftLabel"
+                    >
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasLeftLabel">
+                                Choose the content you wish to view
+                            </h5>
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="offcanvas"
+                                data-bs-target="#offcanvasLeft"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div class="accordion-item bg-glassy">
+                            <h2 class="accordion-header">
+                                <button
+                                    class="accordion-button collapsed pt-2"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#accordionBio"
+                                    aria-expanded="false"
+                                    aria-controls="accordionBio"
+                                >
+                                    Filter Posts
+                                </button>
+                            </h2>
+                            <div
+                                id="accordionBio"
+                                class="accordion-collapse collapse"
+                            >
+                                <div class="accordion-body p-0">
+                                    <div class="accordion-item py-1 ps-2">
+                                        <p>Posts to show:</p>
+                                        <div
+                                            class="w-100"
+                                            role="group"
+                                            aria-label="radio toggle button group"
+                                        >
+                                            <input
+                                                type="radio"
+                                                class="btn-check"
+                                                name="vbtn-radio"
+                                                id="vbtn-radio1"
+                                            />
+                                            <label
+                                                class="btn btn-outline-light"
+                                                for="vbtn-radio1"
+                                                >Stream</label
+                                            >
+                                            <input
+                                                type="radio"
+                                                class="btn-check"
+                                                name="vbtn-radio"
+                                                id="vbtn-radio2"
+                                            />
+                                            <label
+                                                class="btn btn-outline-light"
+                                                for="vbtn-radio2"
+                                                >Discussion</label
+                                            >
+                                            <input
+                                                type="radio"
+                                                class="btn-check"
+                                                name="vbtn-radio"
+                                                id="vbtn-radio3"
+                                                checked
+                                            />
+                                            <label
+                                                class="btn btn-outline-light"
+                                                for="vbtn-radio3"
+                                                >All</label
+                                            >
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item py-1 ps-2">
+                                        <p>Posts Date:</p>
+                                        <div
+                                            class="w-100"
+                                            role="group"
+                                            aria-label="radio toggle button group"
+                                        >
+                                            <input
+                                                type="radio"
+                                                class="btn-check"
+                                                name="vbtn-radio-one"
+                                                id="vbtn-radio01"
+                                            />
+                                            <label
+                                                class="btn btn-outline-light"
+                                                for="vbtn-radio01"
+                                                >New</label
+                                            >
+                                            <input
+                                                type="radio"
+                                                class="btn-check"
+                                                name="vbtn-radio-one"
+                                                id="vbtn-radio02"
+                                            />
+                                            <label
+                                                class="btn btn-outline-light"
+                                                for="vbtn-radio02"
+                                                >Old</label
+                                            >
+                                            <input
+                                                type="radio"
+                                                class="btn-check"
+                                                name="vbtn-radio-one"
+                                                id="vbtn-radio03"
+                                                checked
+                                            />
+                                            <label
+                                                class="btn btn-outline-light"
+                                                for="vbtn-radio03"
+                                                >All</label
+                                            >
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item py-1 ps-2">
+                                        <p>Posted by:</p>
+                                        <div
+                                            class="w-100"
+                                            role="group"
+                                            aria-label="radio toggle button group"
+                                        >
+                                            <input
+                                                type="radio"
+                                                class="btn-check"
+                                                name="vbtn-radio-two"
+                                                id="vbtn-radioo1"
+                                            />
+                                            <label
+                                                class="btn btn-outline-light"
+                                                for="vbtn-radioo1"
+                                                >Following</label
+                                            >
+                                            <input
+                                                type="radio"
+                                                class="btn-check"
+                                                name="vbtn-radio-two"
+                                                id="vbtn-radioo2"
+                                            />
+                                            <label
+                                                class="btn btn-outline-light"
+                                                for="vbtn-radioo2"
+                                                >Friends</label
+                                            >
+                                            <input
+                                                type="radio"
+                                                class="btn-check"
+                                                name="vbtn-radio-two"
+                                                id="vbtn-radioo3"
+                                                checked
+                                            />
+                                            <label
+                                                class="btn btn-outline-light"
+                                                for="vbtn-radioo3"
+                                                >All</label
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-glassy">
+                            <h2 class="accordion-header">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#game-collapse"
+                                    aria-expanded="true"
+                                    aria-controls="game-collapse"
+                                >
+                                    Filter games
+                                </button>
+                            </h2>
+                            <div
+                                id="game-collapse"
+                                class="accordion-collapse collapse"
+                            >
+                                <div class="accordion-body px-0">
+                                    <div
+                                        class="justify-content-center d-flex flex-column flex-wrap gap-1 px-4"
+                                        role="group"
+                                        aria-label="Basic checkbox toggle button group"
+                                    >
+                                        <input
+                                            type="checkbox"
+                                            class="btn-check"
+                                            id="btncheck0"
+                                            checked
+                                        />
+                                        <label
+                                            class="btn btn-outline-light"
+                                            for="btncheck0"
+                                        >
+                                            <span
+                                                class="d-flex align-items-center justify-content-center"
+                                            >
+                                                <span class="m-0">All</span>
+                                            </span></label
+                                        >
+                                        <input
+                                            type="checkbox"
+                                            class="btn-check"
+                                            id="btncheck1"
+                                        />
+                                        <label
+                                            class="btn btn-outline-light"
+                                            for="btncheck1"
+                                        >
+                                            <span
+                                                class="d-flex align-items-center justify-content-center"
+                                            >
+                                                <img
+                                                    src="../assets/games/csgo.svg"
+                                                    alt="game Image"
+                                                    height="30"
+                                                />
+                                                <span class="m-0"
+                                                    >Game Name</span
+                                                >
+                                            </span></label
+                                        >
+
+                                        <input
+                                            type="checkbox"
+                                            class="btn-check"
+                                            id="btncheck2"
+                                        />
+                                        <label
+                                            class="btn btn-outline-light"
+                                            for="btncheck2"
+                                        >
+                                            <span
+                                                class="d-flex align-items-center justify-content-center"
+                                            >
+                                                <img
+                                                    src="../assets/games/csgo.svg"
+                                                    alt="game Image"
+                                                    height="30"
+                                                />
+                                                <span class="m-0"
+                                                    >Game Name</span
+                                                >
+                                            </span></label
+                                        >
+                                        <input
+                                            type="checkbox"
+                                            class="btn-check"
+                                            id="btncheck3"
+                                        />
+                                        <label
+                                            class="btn btn-outline-light"
+                                            for="btncheck3"
+                                        >
+                                            <span
+                                                class="d-flex align-items-center justify-content-center"
+                                            >
+                                                <img
+                                                    src="../assets/games/csgo.svg"
+                                                    alt="game Image"
+                                                    height="30"
+                                                />
+                                                <span class="m-0"
+                                                    >Game Name</span
+                                                >
+                                            </span></label
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-lg-8 col-md-7 col-12">
+                    <form
+                        class="form-floating pt-3 pt-md-0 needs-validation mb-3"
+                        novalidate
+                    >
+                        <textarea
+                            class="form-control bg-dark bg-avtive-glassy text-white pt-5"
+                            placeholder="Write Something..."
+                            style="height: 200px"
+                            maxlength="400"
+                            minlength="1"
+                            id="validationTooltip1"
+                            required
+                        ></textarea>
+                        <label for="validationTooltip1" class="mt-2"
+                            >Write Something...
+                        </label>
+                        <div class="invalid-tooltip top-0 mt-4 mt-md-2 end-0">
+                            Please write something!!
+                        </div>
+                        <div
+                            class="btn-group position-absolute bottom-0 w-100 bg-glassy"
+                            role="group"
+                            aria-label="Basic mixed styles "
+                        >
+                            <button
+                                type="button"
+                                class="btn btn-blenden d-flex align-items-center justify-content-center gap-2"
+                            >
+                                <i class="fa-solid fa-video"></i>
+                                <span class="m-0 d-none d-lg-inline"
+                                    >Stream</span
+                                >
+                            </button>
+                            <button
+                                type="button"
+                                class="btn btn-blenden d-flex align-items-center justify-content-center gap-2"
+                            >
+                                <i class="fa-solid fa-image"></i>
+                                <span class="m-0 d-none d-lg-inline"
+                                    >Image</span
+                                >
+                            </button>
+
+                            <button
+                                id="controlBtn01"
+                                class="btn btn-blenden d-flex align-items-center justify-content-center gap-2"
+                            >
+                                <i class="fa-solid fa-paper-plane"></i>
+                                <span class="m-0 d-none d-lg-inline"
+                                    >Publish</span
+                                >
+                            </button>
+                        </div>
+                    </form>
+                    <div class="row row-cols-1 g-4">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div
+                                    class="d-flex justify-content-between align-items-center py-2"
+                                >
+                                    <div class="container col-auto">
+                                        <img
+                                            src="../assets/profileImg.jpg"
+                                            class="rounded-circle"
+                                            height="50"
+                                            alt=""
+                                        />
+                                    </div>
+
+                                    <div class="col lh-sm">
+                                        <h6 class="m-0">Name Of the pster</h6>
+                                        <p class="text-muted m-0">
+                                            <i
+                                                class="fa-solid fa-calendar-days"
+                                            ></i>
+                                            12.2.2015
+                                        </p>
+                                    </div>
+                                    <div class="col-auto position-relative">
+                                        <div
+                                            class="dropdown-toggle d-flex position-absolute bottom-100 end-0 p-1 rounded-1 me-2 fs-4 text-dark"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                            role="button"
+                                        >
+                                            <small
+                                                class="text-body-secondary fs-6"
+                                            >
+                                            </small>
+                                        </div>
+                                        <ul
+                                            class="dropdown-menu dropdown-menu-dark dropdown-menu-end"
+                                        >
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >Dont show</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item text-danger"
+                                                    href="#"
+                                                >
+                                                    Report
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <img
+                                    src="https://cdn.vox-cdn.com/thumbor/iaRO8ZRmYP7vNgG5yPiBME1G1Wg=/0x0:3011x1447/1200x675/filters:focal(1123x329:1603x809)/cdn.vox-cdn.com/uploads/chorus_image/image/66954486/VALORANT_Jett_Red_crop.0.jpg"
+                                    class="card-img-centered"
+                                    alt="post test"
+                                />
+                                <div class="card-body">
+                                    <h5 class="card-title">Game Name</h5>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Tenetur, velit unde,
+                                        animi voluptate excepturi maiores alias
+                                        ratione ducimus nobis quo facilis
+                                        placeat suscipit sunt dolor porro culpa,
+                                        fugiat quod soluta.
+                                    </p>
+                                </div>
+                                <div class="card-footer row m-0 p-0">
+                                    <div class="btn-group p-0">
+                                        <button
+                                            type="button"
+                                            class="btn btn-post d-flex align-items-center justify-content-center"
+                                        >
+                                            <i
+                                                class="fa-solid fa-check-double"
+                                            ></i>
+                                            <span class="m-0">
+                                                120
+                                                <span class="d-none d-lg-inline"
+                                                    >Agreed</span
+                                                >
+                                            </span>
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="btn btn-post d-flex align-items-center justify-content-center gap-2"
+                                        >
+                                            <i class="fa-solid fa-comment"></i>
+                                            <span class="m-0">
+                                                12<span
+                                                    class="d-none d-lg-inline"
+                                                    >Comments</span
+                                                >
+                                            </span>
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="btn btn-post d-flex align-items-center justify-content-center gap-2"
+                                        >
+                                            <i
+                                                class="fa-solid fa-share-nodes"
+                                            ></i>
+                                            <span class="m-0">34</span>
+                                            <span class="d-none d-lg-inline"
+                                                >Shared</span
+                                            >
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <div
+                                    class="d-flex justify-content-between align-items-center py-2"
+                                >
+                                    <div class="container col-auto">
+                                        <img
+                                            src="../assets/profileImg.jpg"
+                                            class="rounded-circle"
+                                            height="50"
+                                            alt=""
+                                        />
+                                    </div>
+
+                                    <div class="col lh-sm">
+                                        <h6 class="m-0">Name Of the pster</h6>
+                                        <p class="text-muted m-0">
+                                            <i
+                                                class="fa-solid fa-calendar-days"
+                                            ></i>
+                                            12.2.2015
+                                        </p>
+                                    </div>
+                                    <div class="col-auto position-relative">
+                                        <div
+                                            class="dropdown-toggle d-flex position-absolute bottom-100 end-0 p-1 rounded-1 me-2 fs-4 text-dark"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                            role="button"
+                                        >
+                                            <small
+                                                class="text-body-secondary fs-6"
+                                            >
+                                            </small>
+                                        </div>
+                                        <ul
+                                            class="dropdown-menu dropdown-menu-dark dropdown-menu-end"
+                                        >
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >Dont show</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item text-danger"
+                                                    href="#"
+                                                >
+                                                    Report
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Game Name</h5>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Tenetur, velit unde,
+                                        animi voluptate excepturi maiores alias
+                                        ratione ducimus nobis quo facilis
+                                        placeat suscipit sunt dolor porro culpa,
+                                        fugiat quod soluta.
+                                    </p>
+                                </div>
+                                <div class="card-footer row m-0 p-0">
+                                    <div class="btn-group p-0">
+                                        <button
+                                            type="button"
+                                            class="btn btn-post d-flex align-items-center justify-content-center"
+                                        >
+                                            <i
+                                                class="fa-solid fa-check-double"
+                                            ></i>
+                                            <span class="m-0">
+                                                120
+                                                <span class="d-none d-lg-inline"
+                                                    >Agreed</span
+                                                >
+                                            </span>
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="btn btn-post d-flex align-items-center justify-content-center gap-2"
+                                        >
+                                            <i class="fa-solid fa-comment"></i>
+                                            <span class="m-0">
+                                                12<span
+                                                    class="d-none d-lg-inline"
+                                                    >Comments</span
+                                                >
+                                            </span>
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="btn btn-post d-flex align-items-center justify-content-center gap-2"
+                                        >
+                                            <i
+                                                class="fa-solid fa-share-nodes"
+                                            ></i>
+                                            <span class="m-0">34</span>
+                                            <span class="d-none d-lg-inline"
+                                                >Shared</span
+                                            >
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <div
+                                    class="d-flex justify-content-between align-items-center py-2"
+                                >
+                                    <div class="container col-auto">
+                                        <img
+                                            src="../assets/profileImg.jpg"
+                                            class="rounded-circle"
+                                            height="50"
+                                            alt=""
+                                        />
+                                    </div>
+
+                                    <div class="col lh-sm">
+                                        <h6 class="m-0">Name Of the pster</h6>
+                                        <p class="text-muted m-0">
+                                            <i
+                                                class="fa-solid fa-calendar-days"
+                                            ></i>
+                                            12.2.2015
+                                        </p>
+                                    </div>
+                                    <div class="col-auto position-relative">
+                                        <div
+                                            class="dropdown-toggle d-flex position-absolute bottom-100 end-0 p-1 rounded-1 me-2 fs-4 text-dark"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                            role="button"
+                                        >
+                                            <small
+                                                class="text-body-secondary fs-6"
+                                            >
+                                            </small>
+                                        </div>
+                                        <ul
+                                            class="dropdown-menu dropdown-menu-dark dropdown-menu-end"
+                                        >
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >Dont show</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item text-danger"
+                                                    href="#"
+                                                >
+                                                    Report
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <img
+                                    src="https://cdn.vox-cdn.com/thumbor/iaRO8ZRmYP7vNgG5yPiBME1G1Wg=/0x0:3011x1447/1200x675/filters:focal(1123x329:1603x809)/cdn.vox-cdn.com/uploads/chorus_image/image/66954486/VALORANT_Jett_Red_crop.0.jpg"
+                                    class="card-img-centered"
+                                    alt="post test"
+                                />
+                                <div class="card-body">
+                                    <h5 class="card-title">Game Name</h5>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Tenetur, velit unde,
+                                        animi voluptate excepturi maiores alias
+                                        ratione ducimus nobis quo facilis
+                                        placeat suscipit sunt dolor porro culpa,
+                                        fugiat quod soluta.
+                                    </p>
+                                </div>
+                                <div class="card-footer row m-0 p-0">
+                                    <div class="btn-group p-0">
+                                        <button
+                                            type="button"
+                                            class="btn btn-post d-flex align-items-center justify-content-center"
+                                        >
+                                            <i
+                                                class="fa-solid fa-check-double"
+                                            ></i>
+                                            <span class="m-0">
+                                                120
+                                                <span class="d-none d-lg-inline"
+                                                    >Agreed</span
+                                                >
+                                            </span>
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="btn btn-post d-flex align-items-center justify-content-center gap-2"
+                                        >
+                                            <i class="fa-solid fa-comment"></i>
+                                            <span class="m-0">
+                                                12<span
+                                                    class="d-none d-lg-inline"
+                                                    >Comments</span
+                                                >
+                                            </span>
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="btn btn-post d-flex align-items-center justify-content-center gap-2"
+                                        >
+                                            <i
+                                                class="fa-solid fa-share-nodes"
+                                            ></i>
+                                            <span class="m-0">34</span>
+                                            <span class="d-none d-lg-inline"
+                                                >Shared</span
+                                            >
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <div
+                                    class="d-flex justify-content-between align-items-center py-2"
+                                >
+                                    <div class="container col-auto">
+                                        <img
+                                            src="../assets/profileImg.jpg"
+                                            class="rounded-circle"
+                                            height="50"
+                                            alt=""
+                                        />
+                                    </div>
+
+                                    <div class="col lh-sm">
+                                        <h6 class="m-0">Name Of the pster</h6>
+                                        <p class="text-muted m-0">
+                                            <i
+                                                class="fa-solid fa-calendar-days"
+                                            ></i>
+                                            12.2.2015
+                                        </p>
+                                    </div>
+                                    <div class="col-auto position-relative">
+                                        <div
+                                            class="dropdown-toggle d-flex position-absolute bottom-100 end-0 p-1 rounded-1 me-2 fs-4 text-dark"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                            role="button"
+                                        >
+                                            <small
+                                                class="text-body-secondary fs-6"
+                                            >
+                                            </small>
+                                        </div>
+                                        <ul
+                                            class="dropdown-menu dropdown-menu-dark dropdown-menu-end"
+                                        >
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >Dont show</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item text-danger"
+                                                    href="#"
+                                                >
+                                                    Report
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Game Name</h5>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Tenetur, velit unde,
+                                        animi voluptate excepturi maiores alias
+                                        ratione ducimus nobis quo facilis
+                                        placeat suscipit sunt dolor porro culpa,
+                                        fugiat quod soluta.
+                                    </p>
+                                </div>
+                                <div class="card-footer row m-0 p-0">
+                                    <div class="btn-group p-0">
+                                        <button
+                                            type="button"
+                                            class="btn btn-post d-flex align-items-center justify-content-center"
+                                        >
+                                            <i
+                                                class="fa-solid fa-check-double"
+                                            ></i>
+                                            <span class="m-0">
+                                                120
+                                                <span class="d-none d-lg-inline"
+                                                    >Agreed</span
+                                                >
+                                            </span>
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="btn btn-post d-flex align-items-center justify-content-center gap-2"
+                                        >
+                                            <i class="fa-solid fa-comment"></i>
+                                            <span class="m-0">
+                                                12<span
+                                                    class="d-none d-lg-inline"
+                                                    >Comments</span
+                                                >
+                                            </span>
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="btn btn-post d-flex align-items-center justify-content-center gap-2"
+                                        >
+                                            <i
+                                                class="fa-solid fa-share-nodes"
+                                            ></i>
+                                            <span class="m-0">34</span>
+                                            <span class="d-none d-lg-inline"
+                                                >Shared</span
+                                            >
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <div
+                                    class="d-flex justify-content-between align-items-center py-2"
+                                >
+                                    <div class="container col-auto">
+                                        <img
+                                            src="../assets/profileImg.jpg"
+                                            class="rounded-circle"
+                                            height="50"
+                                            alt=""
+                                        />
+                                    </div>
+
+                                    <div class="col lh-sm">
+                                        <h6 class="m-0">Name Of the pster</h6>
+                                        <p class="text-muted m-0">
+                                            <i
+                                                class="fa-solid fa-calendar-days"
+                                            ></i>
+                                            12.2.2015
+                                        </p>
+                                    </div>
+                                    <div class="col-auto position-relative">
+                                        <div
+                                            class="dropdown-toggle d-flex position-absolute bottom-100 end-0 p-1 rounded-1 me-2 fs-4 text-dark"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                            role="button"
+                                        >
+                                            <small
+                                                class="text-body-secondary fs-6"
+                                            >
+                                            </small>
+                                        </div>
+                                        <ul
+                                            class="dropdown-menu dropdown-menu-dark dropdown-menu-end"
+                                        >
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >Dont show</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item text-danger"
+                                                    href="#"
+                                                >
+                                                    Report
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <img
+                                    src="https://cdn.vox-cdn.com/thumbor/iaRO8ZRmYP7vNgG5yPiBME1G1Wg=/0x0:3011x1447/1200x675/filters:focal(1123x329:1603x809)/cdn.vox-cdn.com/uploads/chorus_image/image/66954486/VALORANT_Jett_Red_crop.0.jpg"
+                                    class="card-img-centered"
+                                    alt="post test"
+                                />
+                                <div class="card-body">
+                                    <h5 class="card-title">Game Name</h5>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Tenetur, velit unde,
+                                        animi voluptate excepturi maiores alias
+                                        ratione ducimus nobis quo facilis
+                                        placeat suscipit sunt dolor porro culpa,
+                                        fugiat quod soluta.
+                                    </p>
+                                </div>
+                                <div class="card-footer row m-0 p-0">
+                                    <div class="btn-group p-0">
+                                        <button
+                                            type="button"
+                                            class="btn btn-post d-flex align-items-center justify-content-center"
+                                        >
+                                            <i
+                                                class="fa-solid fa-check-double"
+                                            ></i>
+                                            <span class="m-0">
+                                                120
+                                                <span class="d-none d-lg-inline"
+                                                    >Agreed</span
+                                                >
+                                            </span>
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="btn btn-post d-flex align-items-center justify-content-center gap-2"
+                                        >
+                                            <i class="fa-solid fa-comment"></i>
+                                            <span class="m-0">
+                                                12<span
+                                                    class="d-none d-lg-inline"
+                                                    >Comments</span
+                                                >
+                                            </span>
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="btn btn-post d-flex align-items-center justify-content-center gap-2"
+                                        >
+                                            <i
+                                                class="fa-solid fa-share-nodes"
+                                            ></i>
+                                            <span class="m-0">34</span>
+                                            <span class="d-none d-lg-inline"
+                                                >Shared</span
+                                            >
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <div
+                                    class="d-flex justify-content-between align-items-center py-2"
+                                >
+                                    <div class="container col-auto">
+                                        <img
+                                            src="../assets/profileImg.jpg"
+                                            class="rounded-circle"
+                                            height="50"
+                                            alt=""
+                                        />
+                                    </div>
+
+                                    <div class="col lh-sm">
+                                        <h6 class="m-0">Name Of the pster</h6>
+                                        <p class="text-muted m-0">
+                                            <i
+                                                class="fa-solid fa-calendar-days"
+                                            ></i>
+                                            12.2.2015
+                                        </p>
+                                    </div>
+                                    <div class="col-auto position-relative">
+                                        <div
+                                            class="dropdown-toggle d-flex position-absolute bottom-100 end-0 p-1 rounded-1 me-2 fs-4 text-dark"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                            role="button"
+                                        >
+                                            <small
+                                                class="text-body-secondary fs-6"
+                                            >
+                                            </small>
+                                        </div>
+                                        <ul
+                                            class="dropdown-menu dropdown-menu-dark dropdown-menu-end"
+                                        >
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >Dont show</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item text-danger"
+                                                    href="#"
+                                                >
+                                                    Report
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Game Name</h5>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Tenetur, velit unde,
+                                        animi voluptate excepturi maiores alias
+                                        ratione ducimus nobis quo facilis
+                                        placeat suscipit sunt dolor porro culpa,
+                                        fugiat quod soluta.
+                                    </p>
+                                </div>
+                                <div class="card-footer row m-0 p-0">
+                                    <div class="btn-group p-0">
+                                        <button
+                                            type="button"
+                                            class="btn btn-post d-flex align-items-center justify-content-center"
+                                        >
+                                            <i
+                                                class="fa-solid fa-check-double"
+                                            ></i>
+                                            <span class="m-0">
+                                                120
+                                                <span class="d-none d-lg-inline"
+                                                    >Agreed</span
+                                                >
+                                            </span>
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="btn btn-post d-flex align-items-center justify-content-center gap-2"
+                                        >
+                                            <i class="fa-solid fa-comment"></i>
+                                            <span class="m-0">
+                                                12<span
+                                                    class="d-none d-lg-inline"
+                                                    >Comments</span
+                                                >
+                                            </span>
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="btn btn-post d-flex align-items-center justify-content-center gap-2"
+                                        >
+                                            <i
+                                                class="fa-solid fa-share-nodes"
+                                            ></i>
+                                            <span class="m-0">34</span>
+                                            <span class="d-none d-lg-inline"
+                                                >Shared</span
+                                            >
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
+        <footer></footer>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../js/index.js"></script>
+    </body>
+</html>

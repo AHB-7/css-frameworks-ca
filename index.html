@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="dist/css/index.css" />
+    </head>
+    <body data-bs-theme="dark" class="m-0 p-0">
+        <nav class="row w-100">
+            <div class="col-12 p-4">
+                <a href="index.html">
+                    <img
+                        src="./assets/logo.svg"
+                        alt=""
+                        height="40"
+                        class="w-100"
+                    />
+                </a>
+            </div>
+        </nav>
+        <main class="m-auto">
+            <div
+                class="m-0 row justify-content-center align-items-center"
+                style="height: 80vh"
+            >
+                <section
+                    class="col-12 col-md-6 text-center text-md-start"
+                    style="max-width: 40rem"
+                >
+                    <h1 class="pb-4">
+                        Psycho <b class="text-danger">Gamer</b>
+                        <b class="text-brand rounded-1">Society</b>
+                    </h1>
+                    <p class="pe-md-4 pe-0">
+                        Psycho Gamer Society: Your go-to hub for streaming, game
+                        discussions, and finding like-minded friends to level up
+                        your gaming experience!
+                    </p>
+                </section>
+                <section
+                    class="col-12 col-md-6 rounded-3 bg-glassy border border-1"
+                    style="max-width: 20rem"
+                >
+                    <h2 class="text-capitalize text-center py-5">Sign In</h2>
+                    <form
+                        class="row g-0 needs-validation input-group d-flex align-items-center justify-content-center"
+                        novalidate
+                    >
+                        <div class="position-relative mb-5">
+                            <label for="validationTooltip0" class="form-label"
+                                >UserName</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="validationTooltip0"
+                                placeholder="UserName"
+                                required
+                            />
+                            <div class="valid-tooltip">Looks good!</div>
+                            <div class="invalid-tooltip">
+                                Please choose a valid username.
+                            </div>
+                        </div>
+                        <div class="position-relative">
+                            <label for="pswd" class="form-label"
+                                >Password:</label
+                            >
+                            <input
+                                autocomplete="off"
+                                minlength="8"
+                                type="password"
+                                class="form-control"
+                                id="pswd"
+                                placeholder="Enter Password"
+                                required
+                            />
+
+                            <div class="valid-tooltip">Looks good!</div>
+                            <div class="invalid-tooltip">
+                                The password must be at least 8 characters
+                            </div>
+                        </div>
+                        <div class="text-center mt-5">
+                            <button class="btn text-brand" type="submit">
+                                Sign In
+                            </button>
+                        </div>
+                        <div class="text-center mt-1 mb-5">
+                            <p class="m-0 p-0">or</p>
+                            <a
+                                href="/html/signup.html"
+                                class="link-brand m-0 p-0"
+                            >
+                                Sign Up
+                            </a>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </main>
+        <footer></footer>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./js/index.js"></script>
+    </body>
+</html>

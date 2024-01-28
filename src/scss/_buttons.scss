@@ -1,0 +1,51 @@
+.link {
+    &-brand {
+        color: $white;
+        &:hover {
+            color: $brand;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+}
+.dropdown {
+    &-toggle {
+        &:hover {
+            cursor: pointer;
+        }
+        &:after {
+            color: $light;
+        }
+    }
+    &-item {
+        &.active {
+            background-color: $dark;
+            color: $brand;
+        }
+    }
+}
+.btn {
+    &-brand {
+        background-color: $brand;
+        color: $dark;
+    }
+    &:hover {
+        background-color: $white;
+        color: $black;
+    }
+    &-pink {
+        background-color: $pink;
+    }
+    &-dropdown {
+        background-color: none;
+        color: $white;
+        &:hover {
+            background-color: $brand;
+            color: $black;
+        }
+        &:focus {
+            background-color: $brand;
+            color: $black;
+        }
+    }
+}

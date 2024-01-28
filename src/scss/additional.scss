@@ -1,0 +1,65 @@
+.bg,
+.text {
+    &-brand {
+        background-color: $brand;
+        color: $dark;
+    }
+    &-pink {
+        background-color: $pink;
+    }
+    &-blue {
+        background-color: $blue;
+    }
+}
+.bg {
+    &-glassy {
+        box-shadow: $box-shadow-sgs;
+    }
+}
+.w {
+    &-game {
+        width: 3.5rem;
+        padding: 0.2rem;
+    }
+}
+.bg {
+    &-avtive-glassy {
+        border: 0.2rem solid $white;
+        border-left: 0;
+        border-bottom: 0;
+        border-right: 0;
+        resize: none;
+        &:active,
+        &:hover,
+        &:focus {
+            box-shadow: $box-shadow-sgs;
+            border: none;
+        }
+    }
+}
+.bg-gradiant {
+    &-inplemented {
+        background: linear-gradient(
+            90deg,
+            rgba(rgb(57, 55, 55), 0) 0%,
+            rgba(rgb(57, 55, 55), 0.1) 25%,
+            rgba(rgb(57, 55, 55), 0.45) 50%,
+            rgba(rgb(57, 55, 55), 0.75) 75%,
+            rgba(rgb(57, 55, 55), 0.9) 100%
+        );
+        @include border-radius(0.2rem);
+    }
+}
+.form {
+    &-label {
+        margin-top: 2rem;
+    }
+}
+.border {
+    &-bottom-brand {
+        border-bottom: var(--bs-border-width) var(--bs-border-style) $brand;
+    }
+    &-end {
+        border-right: var(--bs-border-width) var(--bs-border-style) $brand;
+    }
+}
